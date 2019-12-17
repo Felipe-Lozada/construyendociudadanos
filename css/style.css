@@ -206,5 +206,10 @@ body {
     text-align: justify;
 }
 
+.sectionEjes__Wrapper article img {
+    width: 100px;
+    height: 150px;
+}
+
 
 /*Pie de pagina*/
