@@ -172,6 +172,7 @@ body {
     letter-spacing: .5px;
     display: flex;
     flex-direction: column;
+    font-size: 15px;
 }
 
 .sectionSomos {
