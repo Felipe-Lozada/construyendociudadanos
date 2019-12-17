@@ -1,0 +1,125 @@
+/*Header*/
+
+.header {
+    width: 100%;
+    height: 750px;
+    font-size: 17px;
+    letter-spacing: .1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Maven Pro', sans-serif;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/*Capa que oscurece el video y permite que el texto se vea*/
+
+.header__layer {
+    width: 100%;
+    height: 750px;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+
+/*Menu de navegacion*/
+
+.header__menuWrapper {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*Logo del menu*/
+
+.header__menuLogo {
+    width: 30%;
+    height: 75px;
+    margin-top: 25px;
+    margin-left: 35px;
+    padding: 10px;
+    z-index: 1;
+}
+
+
+/*Barra del menu*/
+
+.header__navWrapper {
+    width: 50%;
+    height: 75px;
+    margin-top: 25px;
+    margin-right: 35px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* opciones de la barra de menu */
+
+.header__nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav--item {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.header__nav--item a {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+
+/*Efecto de la barra de menu*/
+
+.header__nav--item a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*Video de fondo del header*/
+
+.header__video {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    bottom: 0;
+}
+
+
+/*Texto del video*/
+
+.header__text {
+    width: 75%;
+    height: 300px;
+    margin-top: 170px;
+    margin-left: 15%;
+    padding: 10px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Sections*/
+
+section {
+    text-align: justify;
+}
