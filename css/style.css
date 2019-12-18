@@ -159,9 +159,10 @@ body {
 }
 
 .tecolote {
-    margin-top: 10px;
-    width: 100%;
-    height: 200px;
+    padding: 10px;
+    border: 1px solid red;
+    width: 70%;
+    height: 70%;
 }
 
 
