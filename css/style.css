@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
 }
 
 ::-webkit-scrollbar {
@@ -127,6 +126,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10%;
 }
 
 
@@ -187,10 +187,11 @@ body {
 
 /*Fondo de las secciones*/
 
-section:nth-child(2n) {
+
+/*section:nth-child(2n) {
     background: #1d1c1b;
-    color: #a3a3a3
-}
+    color: #a3a3a3;
+}*/
 
 .sections {
     background: transparent;
@@ -229,7 +230,7 @@ section:nth-child(2n) {
 .sectionSomos__desc img {
     margin-top: 10px;
     padding: 5px;
-    width: 30%;
+    width: 50%;
     height: 30%;
 }
 
@@ -241,57 +242,12 @@ section:nth-child(2n) {
     box-sizing: border-box;
 }
 
-.somos__misionVision {
-    width: 100%;
-    display: flex;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: justify;
-    font-size: 17px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.somos__misionVision--Mision {
-    padding: 10px;
-    font-size: 1.1em;
-    letter-spacing: .05em;
-    width: 50%;
-}
-
-.somos__misionVision--Mision h3 {
-    padding: 10px;
-    font-size: 2em;
-    text-align: center;
-}
-
-.sectionEjes {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sectionEjes__Wrapper {
-    display: flex;
-    width: 100%;
-    height: 30%;
-}
-
-.sectionEjes__Wrapper article {
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: justify;
-}
-
-.sectionEjes__Wrapper article img {
-    width: 100px;
-    height: 150px;
-}
-
 
 /*Pie de pagina*/
+
+.footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
