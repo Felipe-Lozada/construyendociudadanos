@@ -169,7 +169,7 @@ body {
 /*Fondo de las secciones*/
 
 .sections {
-    background: #f7f7f7;
+    background: #E1E3FF;
     letter-spacing: .5px;
     display: flex;
     flex-direction: column;
