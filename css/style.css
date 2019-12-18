@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    margin: 1px solid greenyellow;
 }
 
 ::-webkit-scrollbar {
@@ -112,8 +111,9 @@ body {
 /*Texto del header con el efecto de maquina de escribir*/
 
 .header__text {
-    width: 100%;
-    height: 100%;
+    margin-bottom: 10px;
+    width: 70%;
+    height: 82%;
     margin-top: 19%;
     letter-spacing: .5px;
     padding: 15px;
@@ -161,7 +161,6 @@ body {
 
 .tecolote {
     padding: 10px;
-    border: 1px solid red;
     width: 70%;
     height: 70%;
 }
@@ -183,7 +182,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px dotted darkolivegreen;
 }
 
 .sectionEjes {
@@ -193,7 +191,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px dotted darkviolet;
 }
 
 .sectionEjes__Wrapper {
@@ -204,7 +201,6 @@ body {
 
 .sectionEjes__Wrapper article {
     padding: 10px;
-    border: 1px solid red;
     box-sizing: border-box;
     text-align: justify;
 }
