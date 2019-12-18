@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 1px solid turquoise;
 }
 
 ::-webkit-scrollbar {
@@ -10,7 +11,6 @@
     display: none;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 /* Algunos cambio pertinetes*/
 
@@ -81,7 +81,8 @@ body {
     align-items: center;
     list-style: none;
     letter-spacing: .5px;
-    font-size: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 .header__nav--item {
@@ -95,6 +96,12 @@ body {
 
 .header__nav--item a:hover {
     text-decoration: underline;
+}
+
+.menu__respo {
+    width: 40px;
+    height: 40px;
+    visibility: hidden;
 }
 
 
@@ -112,10 +119,9 @@ body {
 /*Texto del header con el efecto de maquina de escribir*/
 
 .header__text {
-    margin-bottom: 10px;
     width: 70%;
-    height: 82%;
-    margin-top: 19%;
+    height: 55%;
+    margin-top: 10%;
     letter-spacing: .5px;
     padding: 15px;
     font-size: 25px;
@@ -127,7 +133,9 @@ body {
 
 /*Texto con efecto*/
 
-.header__textTyped>h2 {
+.header__textTyped {
+    width: 90%;
+    padding: 10px;
     overflow: hidden;
     letter-spacing: 2px;
     animation: textTyping 5s steps(47, end), blink .75s step-end infinite;
@@ -136,6 +144,22 @@ body {
     font-weight: 700;
     border-right: 4px solid azure;
     box-sizing: border-box;
+}
+
+.header__textNormal {
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*Tecolote */
+
+.tecolote {
+    padding: 10px;
+    width: 90%;
+    margin-top: 10px;
+    height: auto;
 }
 
 
@@ -160,22 +184,17 @@ body {
     }
 }
 
-.tecolote {
-    padding: 10px;
-    width: 70%;
-    height: 70%;
-}
-
 
 /*Fondo de las secciones*/
 
 .sections {
-    background: #E1E3FF;
+    background: transparent;
+    color: #7a7a7a;
     letter-spacing: .8px;
     display: flex;
     flex-direction: column;
     font-size: 17px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sectionSomos {
@@ -195,7 +214,23 @@ body {
 }
 
 .sectionSomos__desc h3 {
+    font-weight: bold;
     font-size: 1.5em;
+}
+
+.sectionSomos__desc img {
+    margin-top: 10px;
+    padding: 5px;
+    width: 30%;
+    height: 30%;
+}
+
+.sectionSomos__desc p {
+    width: 90%;
+    height: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
 }
 
 
