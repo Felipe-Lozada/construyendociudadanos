@@ -10,6 +10,7 @@
     display: none;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 /* Algunos cambio pertinetes*/
 
@@ -111,8 +112,9 @@ body {
 /*Texto del header con el efecto de maquina de escribir*/
 
 .header__text {
-    width: 100%;
-    height: 100%;
+    margin-bottom: 10px;
+    width: 70%;
+    height: 82%;
     margin-top: 19%;
     letter-spacing: .5px;
     padding: 15px;
@@ -159,20 +161,21 @@ body {
 }
 
 .tecolote {
-    margin-top: 10px;
-    width: 100%;
-    height: 200px;
+    padding: 10px;
+    width: 70%;
+    height: 70%;
 }
 
 
 /*Fondo de las secciones*/
 
 .sections {
-    background: #f7f7f7;
-    letter-spacing: .5px;
+    background: #E1E3FF;
+    letter-spacing: .8px;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
+    font-size: 17px;
+    font-family: 'Muli', sans-serif;
 }
 
 .sectionSomos {
@@ -181,17 +184,28 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px dotted darkolivegreen;
 }
 
-.sectionEjes {
+.sectionSomos__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+}
+
+.sectionSomos__desc h3 {
+    font-size: 1.5em;
+}
+
+
+/* .sectionEjes {
     width: 100%;
     height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px dotted darkviolet;
 }
 
 .sectionEjes__Wrapper {
@@ -202,7 +216,6 @@ body {
 
 .sectionEjes__Wrapper article {
     padding: 10px;
-    border: 1px solid red;
     box-sizing: border-box;
     text-align: justify;
 }
@@ -210,7 +223,7 @@ body {
 .sectionEjes__Wrapper article img {
     width: 100px;
     height: 150px;
-}
+} */
 
 
 /*Pie de pagina*/
