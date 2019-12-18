@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    margin: 1px solid greenyellow;
 }
 
 ::-webkit-scrollbar {
