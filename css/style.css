@@ -225,19 +225,19 @@ section:nth-child(2n) {
     padding: 10px;
 }
 
-.sectionSomos__desc h3 {
+.sectionSomos__desc--title {
     width: 100%;
     text-align: center;
     font-weight: bold;
     font-size: 4em;
 }
 
-.sectionSomos__desc img {
+.sectionSomos__desc--img {
     width: 70%;
     margin-top: 20px;
 }
 
-.sectionSomos__desc p {
+.sectionSomos__desc--text {
     width: 70%;
     padding: 10px;
     margin-top: 5px;
@@ -253,7 +253,7 @@ section:nth-child(2n) {
     justify-content: center;
 }
 
-.somos__misionVision--Mision {
+.somos__Mision {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,7 +261,7 @@ section:nth-child(2n) {
     padding: 10px;
 }
 
-.somos__misionVision--Mision h3 {
+.somos__Mision--title {
     width: 98%;
     padding: 10px;
     letter-spacing: .05em;
@@ -270,18 +270,18 @@ section:nth-child(2n) {
     text-align: center;
 }
 
-.somos__misionVision--Mision img {
+.somos__Mision--img {
     width: 101%;
     padding: 10px;
     filter: saturate(.5);
 }
 
-.somos__misionVision--Mision p {
+.somos__Mision--text {
     width: 101%;
     padding: 10px;
 }
 
-.somos__misionVision--Vision {
+.somos__Vision {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +289,7 @@ section:nth-child(2n) {
     padding: 10px;
 }
 
-.somos__misionVision--Vision h3 {
+.somos__Vision--title {
     width: 98%;
     padding: 10px;
     letter-spacing: .05em;
@@ -298,49 +298,35 @@ section:nth-child(2n) {
     text-align: center;
 }
 
-.somos__misionVision--Vision img {
+.somos__Vision--img {
     width: 101%;
     padding: 10px;
     filter: saturate(.5);
 }
 
-.somos__misionVision--Vision p {
+.somos__Vision--text {
     width: 101%;
     padding: 10px;
 }
+
+
+/* Seccion de los ejes */
 
 .sectionEjes {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.sectionEjes h2 {
+.sectionEjes__title {
     width: 98%;
     padding: 10px;
     font-size: 3em;
     font-weight: bold;
     text-align: center;
     letter-spacing: 0.05em;
-}
-
-.sectionEjes__Wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.sectionEjes__eje {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
 }
 
 
