@@ -100,7 +100,7 @@ body {
 .menu__respo {
     width: 40px;
     height: 40px;
-    visibility: hidden;
+    display: none;
 }
 
 
@@ -228,14 +228,12 @@ body {
 }
 
 .sectionSomos__desc img {
-    margin-top: 10px;
-    padding: 5px;
-    width: 50%;
-    height: 30%;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .sectionSomos__desc p {
-    width: 100%;
+    width: 700%;
     padding: 10px;
     margin-top: 5px;
     font-size: 1.5em;
@@ -243,6 +241,8 @@ body {
 }
 
 .somos__misionVision {
+    width: 700%;
+    border: 1px solid rebeccapurple;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -254,12 +254,45 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid forestgreen;
     padding: 10px;
 }
 
-.somos__misionVision--Mision>img {
-    width: 70%;
+.somos__misionVision--Mision h3 {
+    width: 98%;
+    padding: 10px;
+    letter-spacing: .05em;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.somos__misionVision--Mision img {
+    width: 101%;
+    padding: 10px;
+    filter: saturate(.5);
+}
+
+.somos__misionVision--Vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.somos__misionVision--Vision h3 {
+    width: 98%;
+    padding: 10px;
+    letter-spacing: .05em;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.somos__misionVision--Vision img {
+    width: 101%;
+    padding: 10px;
+    filter: saturate(.5);
 }
 
 
