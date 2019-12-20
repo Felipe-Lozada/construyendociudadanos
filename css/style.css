@@ -316,7 +316,7 @@ section:nth-child(2n) {
 
 .sectionEjes {
     width: 99%;
-    height: 85vh;
+    height: 100vh;
     font-size: 17px;
     display: flex;
     flex-direction: column;
@@ -333,60 +333,61 @@ section:nth-child(2n) {
     text-align: center;
     letter-spacing: 0.05em;
 }
-
+/*Aplicando css-grid a los ejes*/
 .sectionEjes__Wrapper {
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  width: 98%;
+  height: 100%;
+  display: grid;
+  grid-template: 0/repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 .sectionEjes__eje {
-    width: 47%;
-    height: 90%;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.sectionsEjes__eje--img {
-    width: 70%;
-    height: 100%;
-}
 
 .sectionEjes__ejeText {
-    width: 48%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+  border: 1px solid red;
+  width: 85%;
+  height: 70vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .sectionEjes__ejeText--title {
-    width: 95%;
-    height: 30%;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 10px;
+  width: 90%;
+  height: 20%;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
 }
 
 .sectionEjes__ejeText--desc {
-    width: 95%;
-    height: 68%;
-    padding: 10px;
-    text-align: center;
-    font-size: .7em;
+  width: 95%;
+  height: 68%;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  text-align: justify;
+  list-style: none;
 }
 
-.sectionEjes__ejeText--desc ol{
-    list-style: none;
-}
 /*Seccion  de registro*/
 
 .sectionRegistro{
