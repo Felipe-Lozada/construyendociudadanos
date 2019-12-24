@@ -10,8 +10,13 @@
     display: none;
 }
 
-
-/* Algunos cambio pertinetes*/
+html {
+    overflow: auto;
+    -ms-overflow-style: none;
+    /* IE 11 */
+    scrollbar-width: none;
+    /* Firefox 64 */
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -333,116 +338,130 @@ section:nth-child(2n) {
     text-align: center;
     letter-spacing: 0.05em;
 }
+
+
 /*Aplicando css-grid a los ejes*/
+
 .sectionEjes__Wrapper {
-  width: 98%;
-  height: 100%;
-  display: grid;
-  grid-template: 0/repeat(4, 1fr);
-  grid-gap: 10px;
+    width: 98%;
+    height: 100%;
+    display: grid;
+    grid-template: 0/repeat(4, 1fr);
+    grid-gap: 10px;
 }
 
 .sectionEjes__eje {
-  height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-
 .sectionEjes__ejeText {
-  border: 1px solid red;
-  width: 85%;
-  height: 70vh;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+    width: 85%;
+    height: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sectionEjes__ejeText--title {
-  width: 90%;
-  height: 20%;
-  font-size: 1.5em;
-  text-align: center;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 90%;
+    height: 20%;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sectionEjes__ejeText--desc {
-  width: 95%;
-  height: 68%;
-  padding: 10px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
-  text-align: justify;
-  list-style: none;
+    width: 95%;
+    height: 68%;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    text-align: justify;
+    list-style: none;
 }
+
 
 /*Seccion  de registro*/
 
-.sectionRegistro{
-  width: 97%;
-  height: 90vh;
-  padding: 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
-  letter-spacing: .009em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.sectionRegistro {
+    width: 97%;
+    height: 90vh;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    letter-spacing: .009em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.sectionRegistro__info{
-  width: 33%;
-  height: 95%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
+.sectionRegistro__info {
+    width: 33%;
+    height: 95%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
 
+.sectionRegistro__info--title {
+    width: 95%;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.sectionRegistro__info--title{
-  width: 95%;
-  height: 10%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+.sectionRegistro__info--text {
+    width: 95%;
+    height: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.sectionRegistro__info--text{
-  width: 95%;
-  height: 80%;
-  margin-top: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.sectionRegistro__form {
+    width: 33%;
+    height: 95%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
 }
+
 
 /*Footer*/
+
 .footer {
-  width: 98%;
-  height: 50vh;
-  padding: 10px;
-  border-top: 1px solid red;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+    width: 98%;
+    height: 50vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
