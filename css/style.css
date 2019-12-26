@@ -465,3 +465,9 @@ section:nth-child(2n) {
     justify-content: space-around;
     align-items: center;
 }
+
+.sectionRegistro__map {
+    width: 33%;
+    height: 95%;
+    padding: 10px;
+}
