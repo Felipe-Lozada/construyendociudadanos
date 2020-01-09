@@ -34,7 +34,6 @@ header {
     color: white;
 }
 
-
 section:nth-child(2n) {
     background: rgba(0, 0, 0, 0.7);
     color: white;
@@ -65,7 +64,6 @@ section:nth-child(2n) {
     width: 90%;
     height: 70%;
 }
-
 
 .header__nav--item {
     margin-left: 15px;

@@ -9,6 +9,9 @@
         $user_region = htmlspecialchars($_POST["region"]);
         $user_coment = htmlspecialchars($_POST["coments"]);
 
+        echo 'Persona interesada: ' .$user_name .'<br>' .'Correo: ' .$user_mail .'<br>';
+        echo 'Localidad: ' .$user_region;
+
     }
 
 ?>
