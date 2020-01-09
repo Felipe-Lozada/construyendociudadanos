@@ -112,7 +112,7 @@
               </div>
               <div class="col col-12 col-md">
                   <h2>Dejanos tus datos y nos pondremos en contacto contigo</h2>
-                  <form action="<?php echo htmlspecialchars($_SERVER[PHP_SELF]);?>" method="post" class="form-horizontal">
+                  <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" class="form-horizontal">
                       <div class="form-group">
                           <label class="control-label col-sm-2" for="nombre">Nombre: </label>
                           <div class="col-sm-10">
@@ -130,6 +130,10 @@
                           <div class="col-sm-10">
                               <select name="region" id="region" name="region" class="form-control">
                                 <option>Elije la comunidad a la que perteneces:</option>
+                                <option value="Tepeapulco">Tepeapulco</option>
+                                <option value="Irolo">Irolo</option>
+                                <option value="Tepetates">Tepetates</option>
+                                <option value="Ciudad Sahagún">Ciudad Sahag&uacute;n</option>
                               </select>
                           </div>
                       </div>
@@ -163,5 +167,3 @@
 </body>
 
 </html>
-<?php
-?>
