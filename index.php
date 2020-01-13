@@ -1,5 +1,8 @@
 <?php
-    require 'index.view.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+
+require 'index.view.php';
     require 'libs/PHPMailer.php';
     require 'libs/SMTP.php';
     // Obteniendo datos del usuario
@@ -21,15 +24,15 @@
         $contact = 'contacto@construyendociudadanos.org';
 
         $mail = new PHPMailer(true);
+        $mail->Mailer="smtp";
         try
         {
             //Server settings
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
             $mail->Host       = 'smtp.ionos.mx';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
             $mail->Username   = 'contacto@construyendociudadanos.org';                     // SMTP username
-            $mail->Password   = '';                               // SMTP password
+            $mail->Password   = 'Construyendo.123';                               // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port       = 587;                                    // TCP port to connect to
             
@@ -38,9 +41,9 @@
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'Here is the subject';
-            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+            $mail->Subject = 'Informes sobre Construyendo Ciudadanos';
+            $mail->Body    = '';
+            $mail->AltBody = 'Hola me llamo $user_name y e';
             $mail->send();
             echo 'Message has been sent';
         }

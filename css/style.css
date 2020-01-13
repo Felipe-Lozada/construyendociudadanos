@@ -38,8 +38,9 @@ section:nth-child(2n) {
     background: rgba(0, 0, 0, 0.9);
     color: white;
 }
+
 footer {
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     color: white;
 }
 
@@ -154,6 +155,7 @@ footer {
     height: auto;
 }
 
+
 /*Animaciones*/
 
 @keyframes textTyping {
@@ -176,34 +178,31 @@ footer {
 }
 
 @media (max-width: 860px) {
-    .overlay{
-        background: rgba(0,0,0,0.9);
+    .overlay {
+        background: rgba(0, 0, 0, 0.9);
     }
-    .header__videoBackground{
+    .header__videoBackground {
         display: none;
     }
     .header__text {
         max-width: 80vw;
         font-size: 15px;
     }
-
-
     .header__textTyped {
         max-width: 100%;
         animation: none;
         font-size: 1.5em;
         border: none;
     }
-
     .tecolote {
         max-width: 100vw;
     }
-
 }
 
-@media (max-width: 710px){
+@media (max-width: 725px) {
     .header__textTyped {
-        font-size: 20px
+        max-width: 100%;
+        font-size: 15px;
         letter-spacing: normal;
     }
 }

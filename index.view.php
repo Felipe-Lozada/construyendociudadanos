@@ -48,7 +48,7 @@
               </video>
                 <!--Texto-->
                 <div class="row w-100 h-100 header__text">
-                    <h2 class="header__textTyped">Construyendo: Respeto, Uni&oacute;n, Ciudadanos</h2>
+                    <h2 class="header__textTyped">Construyendo: <p>Respeto,</p> <p>Uni&oacute;n,</p> <p>Ciudadanos</p></h2>
                     <p class="header__textNormal">
                         Somos una organizaci&oacute;n que busca cambiar su comunidad por medio de acciones
                     </p>
