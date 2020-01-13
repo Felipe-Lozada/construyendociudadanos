@@ -1,12 +1,13 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Execption;
 
-require 'index.view.php';
+    require 'index.view.php';
+    require 'libs/Exception.php';
     require 'libs/PHPMailer.php';
     require 'libs/SMTP.php';
     // Obteniendo datos del usuario
-    $errors = '';
     if ($_SERVER['REQUEST_METHOD'] == 'POST') 
     {
         //Definiendo las variables del usuario
@@ -18,11 +19,10 @@ require 'index.view.php';
         //ajustando los datos
         $user_name = filter_var($user_name, FILTER_SANITIZE_STRING);
         $user_mail = filter_var($user_mail, FILTER_SANITIZE_EMAIL);
-        $user_coment = filter_var($user_name, FILTER_SANITIZE_STRING);
+        $user_coment = filter_var($user_coment, FILTER_SANITIZE_STRING);
 
         //enviando el email
         $contact = 'contacto@construyendociudadanos.org';
-
         $mail = new PHPMailer(true);
         $mail->Mailer="smtp";
         try
@@ -32,24 +32,35 @@ require 'index.view.php';
             $mail->Host       = 'smtp.ionos.mx';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
             $mail->Username   = 'contacto@construyendociudadanos.org';                     // SMTP username
-            $mail->Password   = 'Construyendo.123';                               // SMTP password
+            $mail->Password   = 'Construyendo.1234';                               // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port       = 587;                                    // TCP port to connect to
             
             //Recipients
             $mail->setFrom($user_mail, $user_name);
+            $mail->addAddress($contact, "Construyenco Ciudadanos");
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'Informes sobre Construyendo Ciudadanos';
-            $mail->Body    = '';
-            $mail->AltBody = 'Hola me llamo $user_name y e';
+            $mail->Body    = '<h2> Persona Interesada </h2> </br> Nombre:'.$user_name .'<br> Correo: ' .$user_mail .'<br> Localidad: ' .$user_region .'<br> Comentarios: ' .$user_coment;
+            $mail->AltBody ="";
             $mail->send();
-            echo 'Message has been sent';
+            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                Tu mensaje se ha enviado con exito
+                </div>';
         }
         catch (Exception $e) 
         {
-         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+         echo '<div class="alert alert-warning" role="alert"> 
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                Message could not be sent. Mailer Error: {$mail->ErrorInfo}
+                 </div>';
         }
     }
 ?>

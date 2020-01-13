@@ -61,8 +61,7 @@
                 <div class="col col-12 ">
                     <h2 class="text-center">¿Quienes Somos?</h2>
                     <p class="text-justify">
-                        <h3 class="text-center"> Somos Contruyendo Ciudadanos:</h3>
-                        <br> Una organización que busca el cambiar su comunidad por medio de acciones, comenzando desde la limpieza, respeto, esfuerzo y la unión ciudadana. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maiores amet
+                        <br> Somos una organización que busca el cambiar su comunidad por medio de acciones, comenzando desde la limpieza, respeto, esfuerzo y la unión ciudadana.<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maiores amet
                         eum, rem quis corporis non dolore consectetur vero quibusdam, beatae omnis in recusandae laboriosam cumque nostrum! Consectetur quidem, numquam!
                     </p>
                 </div>
