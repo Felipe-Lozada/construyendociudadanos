@@ -57,7 +57,7 @@
             </div>
         </header>
         <div class="container-fluid">
-            <section class="row m-100 h-100" id="somos">
+            <section class="row m-100 h-100" class="sectionSomos" id="somos">
                 <div class="col col-12 ">
                     <h2 class="text-center">¿Quienes Somos?</h2>
                     <p class="text-justify">
@@ -67,16 +67,16 @@
                     </p>
                 </div>
 
-                <div class="col col-12 col-md-12 col-lg-6">
-                    <h2>Nuestra Misión</h2>
-                    <img src="assets/img/cc_mision.jpeg" class="img-fluid" alt="Mision de Construyendo Ciudadanos" width="500px" height="300px">
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div class="col col-12 col-md-12 col-lg-6 sectionSomos__mision">
+                    <h2 class="sectionSomos__mision--title">Nuestra Misión</h2>
+                    <img src="assets/img/cc_mision.jpeg" class="img-fluid sectionSomos__mision--img" alt="Mision de Construyendo Ciudadanos" width="500px" height="300px">
+                    <p class="text-justify sectionSomos__mision--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div class="col col-12 col-md-12 col-lg-6">
-                    <h2>Nuestra Visión</h2>
-                    <img src="assets/img/cc_vision.jpeg" class="img-fluid" alt="Vision de Construyendo Ciudadanos" width="500px" height="300px">
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div class="col col-12 col-md-12 col-lg-6 sectionSomos__vision">
+                    <h2 class="sectionSomos__vision--title">Nuestra Visión</h2>
+                    <img src="assets/img/cc_vision.jpeg" class="img-fluid sectionSomos__vision--img" alt="Vision de Construyendo Ciudadanos" width="500px" height="300px">
+                    <p class="text-justify sectionSomos__vision--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </section>
@@ -106,9 +106,7 @@
                 <div class="col col-12 col-md">
                     <h2>Direccion</h2>
                     <p class="text-justify">
-                        Recuerda que nos reunimos los lunes entre la Av. Domingo Muños y Av. Ingnacio Allende. <br> A lado de la farmacia naturista y el caf&eacute; "Kronos" en Ciudad Sahag&uacute;n a las 07:00pm. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Repellat expedita quidem magni architecto tempora maxime, soluta delectus repellendus. Eligendi ducimus voluptas enim quae facilis tenetur aut nobis tempora perferendis repellat. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Praesentium suscipit vel voluptatem veniam non.
+                        Recuerda que nos reunimos los lunes entre la Av. Domingo Muños y Av. Ingnacio Allende. <br> A lado de la farmacia naturista y el caf&eacute; "Kronos" en Ciudad Sahag&uacute;n a las 07:00pm.
                     </p>
                 </div>
                 <div class="col col-12 col-md">
@@ -146,7 +144,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-10">
-                                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                                <button type="submit" class="btn btn-dark btn-block">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -156,17 +154,39 @@
         <div class="container-fluid">
         <footer class="row align-content-between h-100 align-items-center">
         <div class="col col-12 col-lg-4">© 2020 Contruyendo Ciudadanos.</div>
-            <div class="col col-12 col-lg-4"><a class="footer__link" href="#">Terminos y condiciones</a></div>
+            <div class="col col-12 col-lg-4"><button class="btn btn-dark footer__link--btn "  data-toggle="modal" data-target="#privacidad" >Aviso de privacidad</button></div>
             <div class="col col-12 col-lg-4">Siguenos en nuestras redes sociales
                 <div class="row align-content-lg-center">
-                    <div class="col col-12 col-lg-6"><a class="footer__link" href="https://facebook.com/Construyendo-Ciudadanos-112941933444981/" target="_blank">Facebook: <img src="assets/ico/cc_facebook.png" alt="Redes Sociales de Construyendo ciudadanos: Facebook" width ="40px" heigth = "40px"></a></div>
-                    <div class="col col-12 col-lg-6"><a class="footer__link" href="#
-                        instagram.com/construyendociudadanos/" target="_blank">Instagram: <img src="assets/ico/cc_instagram.png" alt="Redes Sociales de Construyendo ciudadanos: Instagram" width ="40px" heigth = "40px"></a></div>
+                    <div class="col col-12 col-lg-6"><a class="footer__link" href="https://www.facebook.com/Construyendo-Ciudadanos-112941933444981/" target="_blank">Facebook: <img src="assets/ico/cc_facebook.png" alt="Redes Sociales de Construyendo ciudadanos: Facebook" width ="40px" heigth = "40px"></a></div>
+                    <div class="col col-12 col-lg-6"><a class="footer__link" href="https://www.instagram.com/construyendociudadanos/" target="_blank">Instagram: <img src="assets/ico/cc_instagram.png" alt="Redes Sociales de Construyendo ciudadanos: Instagram" width ="40px" heigth = "40px"></a></div>
                 </div>
             </div>
         </footer>
-        </div>
 
+        <!--Aviso de privacidad-->
+        <div class="modal fade" id="privacidad" tab-index="-1" role="dialog" aria-labelledby="Privacidad" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title align-self-center" id="exampleModalLongTitle">Aviso de privacidad</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-justify">
+        <p>
+            © 2020 Contruyendo Ciudadanos.
+            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, placeat debitis tempora dolorum ex accusamus, distinctio blanditiis saepe laborum, corporis culpa? Eius quis qui magnam quisquam quas, ad ipsam velit temporibus expedita voluptatem quaerat perferendis! Odit mollitia, magni pariatur quaerat accusamus iste! Officia omnis asperiores, eveniet dolores labore quae optio.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+        </div>
+    </div>
     </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
