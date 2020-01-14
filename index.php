@@ -46,7 +46,7 @@ use PHPMailer\PHPMailer\Execption;
             $mail->Body    = '<h2> Persona Interesada </h2> </br> Nombre:'.$user_name .'<br> Correo: ' .$user_mail .'<br> Localidad: ' .$user_region .'<br> Comentarios: ' .$user_coment;
             $mail->AltBody ="";
             $mail->send();
-            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+            echo '<div class="alert alert-success alert-dismissible fade show text-center" role="alert" style = "display:inline-block"; margin:0 auto;>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -55,12 +55,7 @@ use PHPMailer\PHPMailer\Execption;
         }
         catch (Exception $e) 
         {
-         echo '<div class="alert alert-warning" role="alert"> 
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                Message could not be sent. Mailer Error: {$mail->ErrorInfo}
-                 </div>';
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
     }
 ?>
